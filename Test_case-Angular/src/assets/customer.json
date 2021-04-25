@@ -1,0 +1,34 @@
+[
+  {
+    "customerId" : "001",
+    "name" : "Belal",
+    "age" : "30",
+    "email" : "king.cseiu@gmail.com",
+    "contactNo" : "+8801710382172",
+    "district" : "Kushtia"
+  },
+  {
+    "customerId" : "002",
+    "name" : "Hafiz",
+    "age" : "31",
+    "email" : "hafiz.cseiu@gmail.com",
+    "contactNo" : "+8801711102030",
+    "district" : "Kushtia"
+  },
+  {
+    "customerId" : "003",
+    "name" : "Sadia",
+    "age" : "24",
+    "email" : "sadia.govkushtia@gmail.com",
+    "contactNo" : "+8801787382272",
+    "district" : "Jhenaidah"
+  },
+  {
+    "customerId" : "004",
+    "name" : "Ratul",
+    "age" : "28",
+    "email" : "ratul.aece@gmail.com",
+    "contactNo" : "+8801701523684",
+    "district" : "Sirajgoang"
+  }
+]
