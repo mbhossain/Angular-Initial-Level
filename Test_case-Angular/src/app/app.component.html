@@ -2,6 +2,8 @@
 <app-login></app-login>
 <app-signup></app-signup>
 
+<h2>*ngIf in Angular</h2>
+
 <p *ngIf="age>18; else elseBlock">Age is higher than 18</p>
 <ng-template #elseBlock>
     <p>Age is lower than 18</p>
@@ -16,3 +18,24 @@
 <ng-template #elseBlock>
     <p>Age is lower than 18</p>
 </ng-template>
+
+<h2>For Loop in Angular</h2>
+
+<!-- <h4 *ngFor="let item of data">
+    {{item}}
+</h4> -->
+
+<!-- <h4 *ngFor="let item of data">
+    {{item.name}} {{item.age}}
+</h4> -->
+
+<table border="2">
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+    </tr>
+    <tr *ngFor="let item of data">
+        <td>{{item.name}}</td>
+        <td>{{item.age}}</td>
+    </tr>
+</table>
