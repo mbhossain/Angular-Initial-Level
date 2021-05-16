@@ -7,9 +7,9 @@ import { Observable, of, from } from 'rxjs';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
-  
+public readonly title = 'angular';
 
   public name = "Mohammad Belal";
   public message = "I want stop wast time forever my life...";
@@ -19,12 +19,12 @@ export class AppComponent {
   constructor(private http: HttpClient) {
   }
 
-  ngOnInit(){
-    var person = {
-      firstName:"John", 
-      lastName:"Doe", 
-      age:50, 
-      eyeColor:"blue"
+  ngOnInit() {
+    var person: Person = {
+      firstName: "John",
+      lastName: "Doe",
+      age: 50,
+      eyeColor: "blue"
     };
     const personObs: Observable<any> = of(person);
     personObs.subscribe(data => console.log(data));
