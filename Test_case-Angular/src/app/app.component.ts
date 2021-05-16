@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'learn-angular ';
-  age = 19;
+  age = 17;
 }

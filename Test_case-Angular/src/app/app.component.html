@@ -2,4 +2,17 @@
 <app-login></app-login>
 <app-signup></app-signup>
 
-<p *ngIf="age>18">Age is higher then 18</p>
+<p *ngIf="age>18; else elseBlock">Age is higher than 18</p>
+<ng-template #elseBlock>
+    <p>Age is lower than 18</p>
+</ng-template>
+
+<div *ngIf="age>16; then thenBlock; else elseBlock"></div>
+
+<ng-template #thenBlock>
+    <p>Age is higher than 18</p>
+</ng-template>
+
+<ng-template #elseBlock>
+    <p>Age is lower than 18</p>
+</ng-template>
