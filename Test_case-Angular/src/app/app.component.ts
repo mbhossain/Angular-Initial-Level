@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+// public color = "red";
+// public color = "blue";
+public color = "orange";
+
   title = 'learn-angular ';
   age = 17;
 

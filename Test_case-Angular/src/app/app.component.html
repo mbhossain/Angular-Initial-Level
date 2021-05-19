@@ -39,3 +39,13 @@
         <td>{{item.age}}</td>
     </tr>
 </table>
+
+<h2>*ngSwitch in Angular</h2>
+
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">You picked red color</div>
+    <div *ngSwitchCase="'blue'">You picked blue color</div>
+    <div *ngSwitchCase="'green'">You picked green color</div>
+    <div *ngSwitchDefault>You picked again</div>
+
+</div>
