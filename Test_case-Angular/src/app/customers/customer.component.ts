@@ -4,15 +4,17 @@ import {CustomerService} from "../services/customer.service";
 
 @Component({
   selector: 'app-customer',
-  template: ``
+  template: `<h2>Employee List</h2>`
 })
 export class CustomerComponent implements OnInit{
   customer: Customer[]=[];
+  public employess=[];
   constructor(private customerService : CustomerService) {
   }
 
   ngOnInit(): void {
     this.getCustomer();
+    this.customerService.getCustomerList().subscribe(resp=>this.employess=resp)
   }
 
   getCustomer() {
