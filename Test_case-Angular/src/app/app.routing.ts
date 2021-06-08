@@ -6,8 +6,8 @@ export const routes: Routes = [
     path: '',
     children:[
       {
-        path: 'customer',
-        loadChildren: () => import('./customers/customer.module').then(m=>m.CustomerModule)
+        path: 'fetch-data-http',
+        loadChildren: () => import('./modules/fetch-data-http/fetch-data-http.module').then(m=>m.FetchDataHttpModule)
       }
     ]
   }

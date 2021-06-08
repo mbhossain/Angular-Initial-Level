@@ -4,7 +4,7 @@ import {CustomerComponent} from "./customer.component";
 
 export const routes: Routes = [
   {
-    path: '',
+    path: 'b',
     component: CustomerComponent
   }
 ];
