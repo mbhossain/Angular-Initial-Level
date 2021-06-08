@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FetchDataHttpModule } from './modules/fetch-data-http/fetch-data-http.module';
 import {AppRouting} from './app.routing'
+import { EmployeeService } from './modules/fetch-data-http/services/employee.service';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import {AppRouting} from './app.routing'
     FetchDataHttpModule,
     AppRouting
   ],
-  providers: [],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

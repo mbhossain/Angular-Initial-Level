@@ -5,7 +5,7 @@ import { EmployeeListComponent } from './components/employee-list/employee-list.
 
 export const routes: Routes = [
   {
-    path: 'a',
+    path: 'list',
     component: EmployeeListComponent
   },
   {
