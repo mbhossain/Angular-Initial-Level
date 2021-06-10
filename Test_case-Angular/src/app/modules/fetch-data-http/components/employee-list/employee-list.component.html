@@ -4,5 +4,8 @@
 </ul>
 
 <hr>
-<input [ngxTimepicker]="picker">
-<ngx-material-timepicker #picker></ngx-material-timepicker>
+<form [formGroup]="timePicker" (ngSubmit)="getTime()">
+    <input [ngxTimepicker]="picker" formControlName="time" placeholder="Time" format="24">
+    <ngx-material-timepicker #picker></ngx-material-timepicker>
+    <button type="submit">Add Time</button>
+</form>
