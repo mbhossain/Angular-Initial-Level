@@ -22,8 +22,40 @@ export class EmployeeListComponent implements OnInit {
     time: new FormControl(''),
   })
 
-  getTime(){
-    console.log(this.timePicker.value);
+  getTime() {
+    var timeObject = this.timePicker.value;
+    var timeString = timeObject.time;
+    var stringSearch = timeString.includes("PM"); //return boolean
+    // console.log(stringSearch);
+    if (stringSearch == true) {
+      let stringToNumber = parseInt(timeObject.time);
+      stringToNumber += 12;
+      // console.log(stringToNumber);
+      var numberToString = stringToNumber.toString();
+      // console.log(numberToString);
+      if (timeString.length == 8) {
+        var timeSlice = timeString.slice(2);
+        // console.log(timeSlice);
+      } else {
+        var timeSlice = timeString.slice(1);
+        // console.log(timeSlice);
+      }
+      var timeHourMinuteConcat = numberToString.concat("", timeSlice);
+      // console.log(timeHourMinuteConcat);
+      var timeSliceTwo = timeHourMinuteConcat.slice(0, 5);
+      // console.log(timeSliceTwo);
+    } else {
+      // console.log(this.timePicker.value);
+      var timeStringTwo = timeObject.time;
+      // console.log(timeStringTwo);
+      if (timeStringTwo.length == 8) {
+        var timeSliceThree = timeStringTwo.slice(0, 5);
+        // console.log(timeSliceThree);
+      } else {
+        var timeSliceFour = timeStringTwo.slice(0, 4);
+        // console.log(timeSliceFour);
+      }
+    }
   }
 
 }
