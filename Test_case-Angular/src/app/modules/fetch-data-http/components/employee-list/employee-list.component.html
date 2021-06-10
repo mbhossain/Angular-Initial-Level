@@ -2,3 +2,7 @@
 <ul *ngFor="let employee of employees">
     <li>{{employee.name}}</li>
 </ul>
+
+<hr>
+<input [ngxTimepicker]="picker">
+<ngx-material-timepicker #picker></ngx-material-timepicker>

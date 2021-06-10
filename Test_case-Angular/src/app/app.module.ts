@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FetchDataHttpModule } from './modules/fetch-data-http/fetch-data-http.module';
 import {AppRouting} from './app.routing'
 import { EmployeeService } from './modules/fetch-data-http/services/employee.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { EmployeeService } from './modules/fetch-data-http/services/employee.ser
     BrowserModule,
     HttpClientModule,
     FetchDataHttpModule,
-    AppRouting
+    AppRouting,
+    BrowserAnimationsModule
   ],
   providers: [EmployeeService],
   bootstrap: [AppComponent]
