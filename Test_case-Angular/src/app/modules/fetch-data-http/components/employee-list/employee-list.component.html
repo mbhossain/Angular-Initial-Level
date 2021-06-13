@@ -10,5 +10,19 @@
     <input placeholder="Time" aria-label="24hr format" [ngxTimepicker]="fullTime" [format]="24" formControlName="time">
     <ngx-material-timepicker #fullTime></ngx-material-timepicker>&nbsp;
     <button type="submit">Add Time</button>&nbsp;
-    <!-- <button (click)="edit()">Edit</button> -->
 </form>
+<hr>
+<table>
+    <thead>
+        <tr class="bg-primary">
+            <th>Time</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{timeValue}}</td>
+            <td><button class="btn btn-primary" (click)="getTime()">Edit</button></td>
+        </tr>
+    </tbody>
+</table>

@@ -9,8 +9,8 @@ import { FormControl, FormGroup } from '@angular/forms'
 })
 export class EmployeeListComponent implements OnInit {
   public employees = [];
-  public timeValue = "12:35";
   public timePicker;
+  public timeValue = [];
 
   constructor(
     private _employeeService: EmployeeService
@@ -23,6 +23,7 @@ export class EmployeeListComponent implements OnInit {
     this.timePicker.setValue({
       time: '3:16'
     })
+    this.timeValue = this.timePicker.get('time').value;
 
     this._employeeService.getEmployees().subscribe(data => this.employees = data);
   }
