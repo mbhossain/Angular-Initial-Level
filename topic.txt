@@ -1,0 +1,7 @@
+1. dependency injection
+2. two way data binding
+   >change to the model update the view
+   >change to the view update the model
+3. testing
+4. model view controller
+5. directives, filters, module, routing
