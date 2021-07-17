@@ -9,7 +9,7 @@ import { Observable, of, from } from 'rxjs';
 })
 export class AppComponent implements OnInit {
 
-  public readonly title = 'angular';
+public readonly title = 'angular';
 
   public name = "Mohammad Belal";
   public message = "I want stop wast time forever my life...";
@@ -20,5 +20,14 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    var person: Person = {
+      firstName: "John",
+      lastName: "Doe",
+      age: 50,
+      eyeColor: "blue"
+    };
+    const personObs: Observable<any> = of(person);
+    personObs.subscribe(data => console.log(data));
   }
 }
+
