@@ -1,0 +1,25 @@
+<hr>
+<h3>Time Picker</h3>
+<hr><br/>
+<form [formGroup]="timePicker" (ngSubmit)="getTime()">
+    <!-- <input [ngxTimepicker]="picker" formControlName="time" placeholder="Time">
+    <ngx-material-timepicker #picker></ngx-material-timepicker>&nbsp; -->
+    <input placeholder="Time" aria-label="24hr format" [ngxTimepicker]="fullTime" [format]="24" formControlName="time">
+    <ngx-material-timepicker #fullTime></ngx-material-timepicker>&nbsp;
+    <button type="submit">Add Time</button>&nbsp;
+</form><br/><br/>
+
+<table>
+    <thead>
+        <tr class="bg-primary">
+            <th>Time</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{timeValue}}</td>
+            <td><button class="btn btn-primary" (click)="getTime()">Edit</button></td>
+        </tr>
+    </tbody>
+</table>

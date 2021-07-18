@@ -1,0 +1,5 @@
+# how to call a function in angular
+  * define a function
+  * make button and call function on button click
+  * pass params with function call
+  * pass property in function params
