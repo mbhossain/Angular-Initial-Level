@@ -10,6 +10,7 @@ import { CustomerModule } from './modules/customers/customer.module';
 import { CustomerService } from './modules/customers/services/customer.service';
 import { ExcelReaderModule } from './modules/excel-reader/excel-reader.module';
 import { DataShowStateService } from './modules/excel-reader/services/data-show-state.service';
+import { RoutingModule } from './modules/routing/routing.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DataShowStateService } from './modules/excel-reader/services/data-show-
     AppRouting,
     BrowserAnimationsModule,
     CustomerModule,
-    ExcelReaderModule
+    ExcelReaderModule,
+    RoutingModule
   ],
   providers: [
     EmployeeService,

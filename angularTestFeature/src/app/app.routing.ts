@@ -16,6 +16,10 @@ export const routes: Routes = [
       {
         path: 'excel-reader',
         loadChildren: () => import('./modules/excel-reader/excel-reader.module').then(m=>m.ExcelReaderModule)
+      },
+      {
+        path: 'routing',
+        loadChildren: () => import('./modules/routing/routing.module').then(m=>m.RoutingModule)
       }
     ]
   }
