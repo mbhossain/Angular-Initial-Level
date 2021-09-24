@@ -1,0 +1,27 @@
+<!-- Angular 10 Tutorial #8 -->
+<h4>Call Function in Angular</h4>
+<!-- <button (click)="getName()">Get Name</button> -->
+<!-- <button (click)="getName('Sadia')">Get Name</button> -->
+<button (click)="getName(fatherName)">Get Name</button>
+
+<!-- Angular 10 Tutorial #9 -->
+<h4>Important Events in Angular</h4>
+<!-- click event -->
+<button (click)="myEvent('This is my Event')">Click Me!</button>
+<!-- keyup event   -->
+<br><br>
+<!-- <input type="text" (keyup)="myEvent('keyup event')" /> -->
+<!-- <input type="text" #box (keyup)="myEvent(box.value)" /> -->
+<!-- <input type="text" #box (keydown)="myEvent(box.value)" /> -->
+<!-- <input type="text" #box (keyup.enter)="myEvent(box.value)" /> -->
+<!-- <input type="text" #box (keyup.space)="myEvent(box.value)" /> -->
+<!-- <input type="text" #box (blur)="myEvent('blur event')" /> -->
+<input type="text" #box (keyup.enter)="myEvent(box.value)" #box (keyup.space)="myEvent(box.value)" />
+<br>
+<h4 style="background-color: skyblue;" (mouseover)="myEvent('Mouse Over Event')">
+    Mouse Events
+</h4>
+
+<h4 style="background-color: red;" (mouseleave)="myEvent('Mouse Leave Event')">
+    Mouse Events
+</h4>

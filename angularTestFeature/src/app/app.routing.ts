@@ -20,6 +20,10 @@ export const routes: Routes = [
       {
         path: 'routing',
         loadChildren: () => import('./modules/routing/routing.module').then(m=>m.RoutingModule)
+      },
+      {
+        path: 'practice',
+        loadChildren: () => import('./modules/practice/practice.module').then(m=>m.PracticeModule)
       }
     ]
   }

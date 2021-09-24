@@ -11,6 +11,7 @@ import { CustomerService } from './modules/customers/services/customer.service';
 import { ExcelReaderModule } from './modules/excel-reader/excel-reader.module';
 import { DataShowStateService } from './modules/excel-reader/services/data-show-state.service';
 import { RoutingModule } from './modules/routing/routing.module';
+import { PracticeModule } from './modules/practice/practice.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RoutingModule } from './modules/routing/routing.module';
     BrowserAnimationsModule,
     CustomerModule,
     ExcelReaderModule,
-    RoutingModule
+    RoutingModule,
+    PracticeModule
   ],
   providers: [
     EmployeeService,
