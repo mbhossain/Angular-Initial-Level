@@ -16,12 +16,19 @@ export class Angular10AnilComponent implements OnInit {
   // getName(){
   //   alert('Mohammad Belal')
   // }
-  getName(nameOfMyWife){
-    alert(nameOfMyWife)
+  getName(nameOfMyWife) {
+    // alert(nameOfMyWife)
   }
 
-myEvent(evn){
-  console.warn(evn)
-}
+  myEvent(evn) {
+    // console.warn(evn)
+  }
+
+  currentVal = "belal"
+  getVal(val) {
+    console.log(val);
+    console.log(val.value);
+    this.currentVal = val.value;
+  }
 
 }
