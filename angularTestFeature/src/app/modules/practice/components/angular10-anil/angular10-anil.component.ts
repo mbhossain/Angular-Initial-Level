@@ -12,23 +12,33 @@ export class Angular10AnilComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  fatherName = "Motaleb Mridha"
+  // call function
+  // fatherName = "Motaleb Mridha"
   // getName(){
   //   alert('Mohammad Belal')
   // }
-  getName(nameOfMyWife) {
-    // alert(nameOfMyWife)
-  }
+  // getName(nameOfMyWife) {
+  //   alert(nameOfMyWife)
+  // }
 
-  myEvent(evn) {
-    // console.warn(evn)
-  }
+  // implement event
+  // myEvent(evn) {
+  //   console.warn(evn)
+  // }
 
-  currentVal = "belal"
-  getVal(val) {
-    console.log(val);
-    console.log(val.value);
-    this.currentVal = val.value;
+  // get input box value
+  // currentVal = "belal"
+  // getVal(val) {
+  //   console.log(val);
+  //   console.log(val.value);
+  //   this.currentVal = val.value;
+  // }
+
+  // property binding
+  name = "Mohammad belal"
+  disableBox = true
+  enableBox() {
+    this.disableBox = false
   }
 
 }

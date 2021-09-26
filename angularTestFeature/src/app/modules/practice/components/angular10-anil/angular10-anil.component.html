@@ -1,11 +1,11 @@
 <!-- Angular 10 Tutorial #8 -->
-<h4>Call Function in Angular</h4>
+<h4>Call Function</h4>
 <!-- <button (click)="getName()">Get Name</button> -->
 <!-- <button (click)="getName('Sadia')">Get Name</button> -->
 <!-- <button (click)="getName(fatherName)">Get Name</button> -->
 
 <!-- Angular 10 Tutorial #9 -->
-<h4>Important Events in Angular</h4>
+<h4>Important Events</h4>
 <!-- click event -->
 <!-- <button (click)="myEvent('This is my Event')">Click Me!</button> -->
 <!-- keyup event   -->
@@ -27,8 +27,18 @@
 </h4> -->
 
 <!-- Angular 10 Tutorial #10 -->
-<h4>Get Texbox Value in Angular</h4>
+<h4>Get Texbox Value</h4>
 <!-- <input type="text" (keyup)="getVal($event.target.value)" /> -->
 <!-- <input type="text" #box />
 <button (click)="getVal(box)">Get Value</button>
 <h5>{{currentVal}}</h5> -->
+
+<!-- Angular 10 Tutorial #11 -->
+<h4>Property Binding</h4>
+<!-- property binding -->
+<input type="text" [disabled]="disableBox" [value]="name">
+<br><br>
+<!-- interpolation -->
+<input type="text" disabled={{disableBox}} value={{name}}>
+<br><br>
+<button (click)="enableBox()">Enable Text Box</button>
