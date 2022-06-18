@@ -1,0 +1,12 @@
+.partial-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 30%;
+}
+
+.full-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 30%;
+}
